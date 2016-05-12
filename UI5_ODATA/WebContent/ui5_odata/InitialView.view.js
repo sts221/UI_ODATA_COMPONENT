@@ -82,7 +82,7 @@ sap.ui.jsview("sns.basis.myFiori.ui5_odata.InitialView", {
 		                    	   text: "Delete user",
 		                    	   press: function() {
 		                    		   var idx = oTable.getSelectedIndex();
-		                    		   debugger;
+		                    		   // debugger;
 		                    		   if (idx == -1) {
 		                    		   jQuery.sap.require("sap.ui.commons.MessageBox");
 		                    			  /* sap.ui.commons.MessageBox.show(

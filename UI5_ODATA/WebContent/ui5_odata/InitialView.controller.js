@@ -283,7 +283,7 @@ sap.ui.controller(
                                             	       success: function() {
                                             	    	   //alert("User deleted successfully");
                                                            // sap.ui.getCore().getModel().refresh();
-                                            	    	   debugger;
+                                            	    	   // debugger;
                                             	    	   sap.ui.getCore().byId("idInitialView1").getModel().refresh();
                                                            //var tModel = oView.getModel();
                                             	    	   //tModel.refresh();
@@ -463,7 +463,7 @@ sap.ui.controller(
 								}
 								console.log(oEntry.Firstname + " " + oEntry.Lastname);
 								//Age
-								debugger;
+								// debugger;
 								var oCells = oRows[3].getCells();
 								oContent = oCells[1].getContent();
 								// oEntry.Age = parseInt(oContent[0].getValue());
@@ -485,7 +485,7 @@ sap.ui.controller(
 								console.log(oEntry.Address);
 								//Datecreated
 								oContent = oCells[3].getContent();
-								debugger;
+								// debugger;
 								// console.log(oContent[0].getValue()); // "M/D/yy
 								if (!oContent[0].getValue()) {
 									sap.m.MessageToast.show("Please select a date", { duration: 1000 });
