@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+		
+
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.ui.commons, sap.ui.table, sap.m"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-resourceroots='{"sns.basis.myFiori": "./"}'
+				data-sap-ui-preload="">
+		</script>
+		<!-- add sap.ui.table,sap.ui.ux3 and/or other libraries to 'data-sap-ui-libs' if required -->
+
+		<script>
+				jQuery.sap.require("sap.ui.core.util.MockServer");
+		        sap.ui.localResources("ui5_odata");
+				sap.ui.localResources("useful"); // The folder useful must be located under Webcontent
+				
+				/* Next section not required if you use the Component.js
+				   var view = sap.ui.view({id:"idInitialView1", viewName:"ui5_odata.InitialView", type:sap.ui.core.mvc.ViewType.JS});
+				   view.placeAt("content");
+				*/
+		</script>
+		
+		<script>
+		       new sap.ui.core.ComponentContainer({
+		        	name: "sns.basis.myFiori"
+		        }).placeAt("content");
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+		<div id="output"></div>
+	</body>
+</html>
